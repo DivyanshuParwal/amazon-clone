@@ -1,0 +1,64 @@
+.Nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: #131921;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+}
+
+.NavImg {
+	object-fit: contain;
+	width: 120px;
+	cursor: pointer;
+	padding: 20px;
+	padding-bottom: 0;
+	padding-top: 18px;
+}
+
+.SearchBox {
+	display: flex;
+	margin: 10px;
+	margin-right: 25px;
+	flex: 1;
+}
+
+.InputField {
+	border: none;
+	width: 100%;
+	outline: none;
+	padding: 8px;
+}
+
+.SearchIcon {
+	background-color: #febd69;
+	height: 36px !important;
+	padding: 2px;
+	width: 35px !important;
+}
+
+.Links {
+	display: flex;
+}
+
+.Link {
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+	padding-top: 10px;
+	padding-right: 15px;
+}
+
+.CartNum {
+	text-align: center;
+	color: #f08804;
+}
+
+@media only screen and (max-width: 550px) {
+	.SearchBox {
+		display: none;
+	}
+}

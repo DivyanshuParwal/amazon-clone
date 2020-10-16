@@ -1,0 +1,79 @@
+.Product {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
+	flex: 300px;
+	margin: 25px;
+	padding: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.Rating {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.ProductImg {
+	object-fit: contain;
+	max-height: 200px;
+	width: 100%;
+	margin: 12px;
+}
+
+.ProductButton {
+	margin: 0 auto !important;
+	background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+	border: 1px solid !important;
+	border-color: #a88734 #9c7e31 #846a29 !important;
+	border-radius: 2px !important;
+	text-transform: none !important;
+	box-shadow: none !important;
+	height: 27px;
+	padding: 0 25px !important;
+}
+
+.ProductButton:hover {
+	box-shadow: none !important;
+	background: linear-gradient(to bottom, #f4d078, #f0c14b) !important;
+}
+
+.BuyNowButton {
+	margin: 0 auto !important;
+	border: 1px solid !important;
+	border-radius: 2px !important;
+	text-transform: none !important;
+	box-shadow: none !important;
+	height: 27px;
+	padding: 0 34px !important;
+	margin-top: 10px !important;
+	border-color: #ca7c1b #be751a #a56616 !important;
+	background: linear-gradient(to bottom, #f6c88f, #ed9220);
+}
+
+.BuyNowButton:hover {
+	box-shadow: none !important;
+	background: linear-gradient(to bottom, #f2ad58, #ed9220) !important;
+}
+
+.Price {
+	margin: 2px 0;
+}
+
+.ProductInfo2 {
+	display: flex;
+	flex-flow: column;
+}
+
+span {
+	margin-right: 5px;
+}
+
+@media only screen and (max-width: 550px) {
+	.Product {
+		margin-left: 25px;
+		margin-right: 25px;
+		margin-bottom: 0;
+	}
+}

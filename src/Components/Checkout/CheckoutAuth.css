@@ -1,0 +1,93 @@
+.CheckoutAuth {
+	background-color: white;
+	display: flex;
+	flex-flow: wrap;
+	height: 100vh;
+}
+
+.Checkout {
+	background-color: white;
+	height: 100vh;
+}
+
+.CheckoutAuthLeft {
+	flex: 300px;
+	margin: 25px;
+}
+
+.CheckoutAuthRight {
+	display: flex;
+	flex-flow: column;
+	margin: 25px;
+	margin-left: 0px;
+}
+
+.CheckoutAuthImgLeft {
+	object-fit: contain;
+	width: 100%;
+}
+
+.CheckoutAuthImgRight {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+.CheckoutAuthTitle {
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.CheckoutAuthInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 340px;
+	height: 170px;
+	padding: 25px;
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin: 25px;
+}
+
+.SubtotalGift {
+	margin-top: -25px;
+}
+
+.CheckoutButton {
+	background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+	border: 1px solid !important;
+	border-color: #a88734 #9c7e31 #846a29 !important;
+	border-radius: 2px !important;
+	box-shadow: none !important;
+	text-transform: none !important;
+	height: 27px;
+	padding: 0 20px !important;
+}
+
+.CheckoutButton:hover {
+	padding: 0 20px !important;
+	box-shadow: none !important;
+	background: linear-gradient(to bottom, #f4d078, #f0c14b) !important;
+}
+
+.AmazonBasketImg {
+	object-fit: contain;
+	width: 100%;
+}
+
+@media (max-width: 700px) {
+	.CheckoutAuthRight {
+		margin: 25px auto;
+	}
+	.CheckoutAuthLeft {
+		margin: 0;
+	}
+}
+
+@media (max-width: 400px) {
+	.CheckoutButton {
+		width: 100%;
+	}
+}

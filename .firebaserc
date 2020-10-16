@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "clone-b9208"
+  },
+  "targets": {
+    "clone-b9208": {
+      "hosting": {
+        "amazon": [
+          "amzon-clone-dp"
+        ],
+        "default": [
+          "clone-b9208"
+        ]
+      }
+    }
+  }
+}

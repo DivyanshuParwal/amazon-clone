@@ -1,0 +1,70 @@
+.CheckoutNoAuth {
+	background-color: white;
+	height: 100vh;
+}
+
+.CheckoutMiddle {
+	display: flex;
+	margin: 50px;
+}
+
+.CheckoutImg {
+	object-fit: contain;
+	width: 100%;
+}
+
+.ButtonLink {
+	text-decoration: none;
+	color: black;
+}
+
+.CheckoutMiddleLeft {
+	margin-right: 25px;
+}
+
+.CheckoutMiddleRight > p {
+	color: #007185;
+	margin-bottom: 20px;
+}
+
+.CheckoutNoAuthSignUpButton {
+	border-radius: 2px !important;
+	background: linear-gradient(to bottom, #f7f8fa, #e7e9ec) !important;
+	border: 1px solid !important;
+	border-color: #adb1b8 #a2a6ac #8d9096 !important;
+	box-shadow: none !important;
+	text-transform: none !important;
+	margin-left: 10px !important;
+	height: 27px;
+	padding: 0 20px !important;
+}
+
+.CheckoutNoAuthSignUpButton:hover {
+	box-shadow: none !important;
+	background: linear-gradient(to bottom, #eff0f3, #e7e9ec) !important;
+}
+
+.CheckoutNoAuth > p {
+	font-size: 12px;
+	line-height: 16px;
+	margin: 20px;
+}
+
+@media (max-width: 700px) {
+	.CheckoutMiddle {
+		margin: 20px;
+		flex-wrap: wrap;
+	}
+
+	.CheckoutMiddleLeft {
+		margin: auto;
+	}
+}
+
+@media (max-width: 400px) {
+	.CheckoutNoAuthSignUpButton {
+		width: 100%;
+		margin-top: 10px !important;
+		margin-left: 0 !important;
+	}
+}

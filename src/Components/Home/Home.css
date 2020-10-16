@@ -1,0 +1,26 @@
+.Home {
+	width: 100%;
+}
+
+.HomeImg {
+	background-size: cover;
+	object-fit: contain;
+	width: 100%;
+	mask-image: linear-gradient(to bottom, #000, transparent);
+	margin-bottom: -150px;
+	z-index: -1;
+}
+
+.Footer {
+	text-align: center;
+	padding: 20px;
+	color: white;
+	background-color: #131921;
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 550px) {
+	.HomeImg {
+		margin-bottom: -90px;
+	}
+}
