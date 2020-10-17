@@ -5,8 +5,6 @@ import Axios from 'axios';
 import './Auth.css';
 import { AuthContext } from '../../context/authContext';
 
-const API_KEY = 'AIzaSyCo1biWzd-37P5YHh6Psa5fQUjB3Ert4ts';
-
 const Auth = (props) => {
 	const [ email, setEmail ] = useState('');
 	const [ password, setPassword ] = useState('');
@@ -19,7 +17,10 @@ const Auth = (props) => {
 			password,
 			returnSecureToken: true
 		};
-		Axios.post(`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${API_KEY}`, userData)
+		Axios.post(
+			`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${process.env.REACT_APP_GOOGLE_API_KEY}`,
+			userData
+		)
 			.then((response) => {
 				auth.setAuthenticated(true);
 				props.history.goBack();
@@ -35,7 +36,11 @@ const Auth = (props) => {
 			password,
 			returnSecureToken: true
 		};
-		Axios.post(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${API_KEY}`, userData)
+		Axios.post(
+			`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env
+				.REACT_APP_GOOGLE_API_KEY}`,
+			userData
+		)
 			.then((response) => {
 				auth.setAuthenticated(true);
 				props.history.goBack();
