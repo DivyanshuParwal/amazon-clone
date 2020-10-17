@@ -2,12 +2,10 @@
 	background-color: white;
 	display: flex;
 	flex-flow: wrap;
-	height: 100vh;
 }
 
 .Checkout {
 	background-color: white;
-	height: 100vh;
 }
 
 .CheckoutAuthLeft {
